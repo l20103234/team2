@@ -5,12 +5,12 @@ variable "image_id" {
 }
 
 variable "aws_access_key" {
-  description = "AKIAQGYBP336JAQQLZRX"
+  description = "AWS Access Key"
   type        = string
 }
 
 variable "aws_secret_key" {
-  description = "3RsL94YqHeM6Wba6zFXyaMvQU/wEUtqZ+/zTIFKK"
+  description = "AWS Secret Key"
   type        = string
   sensitive   = true
 }
