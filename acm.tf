@@ -27,5 +27,4 @@ resource "aws_route53_record" "route53_ssl" {
   records         = [each.value.record]
   ttl             = 60
   type            = each.value.type
-  zone_id         = aws_route53_zone.route53.zone_id
 }
