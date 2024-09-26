@@ -13,7 +13,6 @@ resource "aws_acm_certificate" "cert" {
 }
 
 # 인증서 검증
-resource "aws_route53_record" "route53_ssl" {
   for_each = {
     for dvo in aws_acm_certificate.cert.domain_validation_options : dvo.domain_name => {
       name   = dvo.resource_record_name
